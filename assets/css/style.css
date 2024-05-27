@@ -23,25 +23,14 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: fit-content;
+header div img {
+    margin-bottom: 20px;
 }
-
-.imagePar{
-    display: flex;
-    align-items: center;
-}
-
 header nav ul {
     margin: 0;
 }
 header nav li {
     list-style: none;
-    display: inline-block;
 }
 header nav li a {
     color: white;
@@ -61,11 +50,6 @@ main {
     padding: 2em 1em;
     margin-bottom:1.5em ;
 }
-
-article img{
-    padding: 10px;
-}
-
 section { 
     background-color: #e3e3e3;
     padding: 1em;
@@ -87,10 +71,8 @@ h1 {
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-
-article p,address, ul, ol, dl, blockquote {
+p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
-    line-height: 2em;
 }
 h1 + p {
     color: #a0a0a0;
@@ -117,18 +99,6 @@ iframe {
     margin-bottom: 2em;
     border-radius: 20px;
 }
-
-article h2{
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-article table{
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-
 
 /* TABELLE */
 table {
@@ -157,23 +127,6 @@ tbody tr:nth-of-type(even) {
 
 tbody tr:last-of-type {
     border-bottom: 2px solid #3f6bca;
-}
-
-/* Long Bars*/
-.longBars{
-    display: flex;
-}
-
-.longBars iframe{
-    width: 50%;
-}
-
-.longBars section{
-    width: 50%;
-}
-
-.longBars section h2{
-    background-color: #909090;
 }
 
 /* FORM */
@@ -226,9 +179,46 @@ footer a {
     color: fuchsia;
 }
 
-@media screen (max-width: 320px) {
 
-    .container{
-        display:vertical-flex;
-        
+/* Versione  Desktop */
+
+@media screen and (min-width:1200px) { 
+    header {
+        padding: 10px 20px;
+        text-align: left;
+      }
+
+      header div p {
+        display: inline-block;
+      }
+
+      header div {
+        text-align: left;
+        width: 80%;
+      }
+
+      header nav{
+        text-align: right;
+      }
+  
+      header div,
+      header nav {
+        display: inline-block; 
+        vertical-align: middle; 
+      }
+  
+      header div img {
+        vertical-align: middle;
+      }
+  
+      header nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      header nav ul li {
+        display: inline; 
+        margin-left: 20px; 
+      }
 }

@@ -221,11 +221,15 @@ footer a {
         display: inline; 
         margin-left: 20px; 
       }
+
+
 /* TABELLE */
 table {
     margin-bottom: 2em;
     margin:auto;
     width:  60%;
+    margin-bottom
+    : 20px;
 }
 caption {
     font-weight: bold;
@@ -253,11 +257,23 @@ tbody tr:last-of-type {
 }
 
 iframe{
-    width: 50%
+    width: 50%;
+    display: inline-block;
+    border-radius: 20px;
+    vertical-align: middle;
 }
 
+section {
+    background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+    width: 50%;
+    display: inline-block;
+    border-radius: 20px;
+    margin-inline: -2px;
+    vertical-align: middle;
+}
 
-/* FORM */
 input {
     padding: 5px;
     border: 0;
@@ -271,9 +287,16 @@ button {
     font-weight: bold;
 }
 
-#form{
-    width: 50%;
-}
+
 
 }
 
+@media screen  and  (min-width:768px) {
+
+table {
+    margin-inline: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+}
